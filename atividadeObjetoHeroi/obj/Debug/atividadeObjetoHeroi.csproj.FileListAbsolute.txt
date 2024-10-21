@@ -1,0 +1,24 @@
+D:\Projetos ETEC\Desenvolvimento de Sistemas\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\bin\Debug\atividadeObjetoHeroi.exe.config
+D:\Projetos ETEC\Desenvolvimento de Sistemas\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\bin\Debug\atividadeObjetoHeroi.exe
+D:\Projetos ETEC\Desenvolvimento de Sistemas\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\bin\Debug\atividadeObjetoHeroi.pdb
+D:\Projetos ETEC\Desenvolvimento de Sistemas\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.csprojResolveAssemblyReference.cache
+D:\Projetos ETEC\Desenvolvimento de Sistemas\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.MainForm.resources
+D:\Projetos ETEC\Desenvolvimento de Sistemas\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.csproj.GenerateResource.Cache
+D:\Projetos ETEC\Desenvolvimento de Sistemas\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.exe
+D:\Projetos ETEC\Desenvolvimento de Sistemas\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.pdb
+E:\Projetos ETEC\Desenvolvimento de Sistemas\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\bin\Debug\atividadeObjetoHeroi.exe.config
+E:\Projetos ETEC\Desenvolvimento de Sistemas\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\bin\Debug\atividadeObjetoHeroi.exe
+E:\Projetos ETEC\Desenvolvimento de Sistemas\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\bin\Debug\atividadeObjetoHeroi.pdb
+E:\Projetos ETEC\Desenvolvimento de Sistemas\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.csprojResolveAssemblyReference.cache
+E:\Projetos ETEC\Desenvolvimento de Sistemas\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.MainForm.resources
+E:\Projetos ETEC\Desenvolvimento de Sistemas\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.csproj.GenerateResource.Cache
+E:\Projetos ETEC\Desenvolvimento de Sistemas\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.exe
+E:\Projetos ETEC\Desenvolvimento de Sistemas\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.pdb
+D:\Etec\Modulo 2\Desenvolvimento de Sisemas (Saiz)\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\bin\Debug\atividadeObjetoHeroi.exe.config
+D:\Etec\Modulo 2\Desenvolvimento de Sisemas (Saiz)\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\bin\Debug\atividadeObjetoHeroi.exe
+D:\Etec\Modulo 2\Desenvolvimento de Sisemas (Saiz)\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\bin\Debug\atividadeObjetoHeroi.pdb
+D:\Etec\Modulo 2\Desenvolvimento de Sisemas (Saiz)\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.csprojResolveAssemblyReference.cache
+D:\Etec\Modulo 2\Desenvolvimento de Sisemas (Saiz)\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.MainForm.resources
+D:\Etec\Modulo 2\Desenvolvimento de Sisemas (Saiz)\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.csproj.GenerateResource.Cache
+D:\Etec\Modulo 2\Desenvolvimento de Sisemas (Saiz)\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.exe
+D:\Etec\Modulo 2\Desenvolvimento de Sisemas (Saiz)\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.pdb
