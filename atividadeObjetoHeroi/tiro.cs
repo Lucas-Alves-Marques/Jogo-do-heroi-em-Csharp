@@ -6,51 +6,52 @@ using System.Windows.Forms;
 namespace atividadeObjetoHeroi
 {
 	public class tiro : PictureBox
-	{
-		
-		Timer tempo = new Timer();
-		
-		
+	{		
 		public tiro()
-		{	
-			Load("fireball.gif");
-			Left = 90;
-			Top = 120;
+		{   
 			Width = 60;
 			Height = 30;
 			SizeMode = PictureBoxSizeMode.StretchImage;
 			BackColor = Color.Transparent;
-			
-			tempo.Enabled = true;
-			tempo.Tick += Movimento;
-
+			Parent = MainForm.Fundo;
+			timerTiro.Enabled = true;
+			timerTiro.Tick += Movimento;
 		}
 		
-		public string direcao = "dir";
-		
+		public int direcao = 1;
+		public int speed = 30;
+		public int dano = 10;
+		public Personagem personagemAlvo;
+		public Timer timerTiro = new Timer();
 
-		
 		
 		void Movimento(object sender, EventArgs e)
 		{	
-			if (Left >= MainForm.Fundo.Width) {
+			
+			Left += direcao * speed;
+			
+			if (Left > MainForm.Fundo.Width || Left < 0) {
 				
-				tempo.Enabled = false;
-				
-				MainForm.n_tiros +=1;
-				
-				Dispose();
+				Destruir();
 			}
 			
-			if (direcao == "dir") {
+			else if(personagemAlvo.Bounds.IntersectsWith(this.Bounds)){
 				
-				Left +=20;
+				(personagemAlvo as Inimigo).Destruir();
+				Destruir();
 			}
 			
 			
 		}
 		
-		
+		public void Destruir()
+		{
+			timerTiro.Enabled = false;
+			Left = 600;
+			this.Dispose();
+			MainForm.listaTiros.Items.Remove(this);
+			MainForm.barra.Value += 1;
+		}
 		
 	}
 }

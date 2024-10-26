@@ -13,16 +13,16 @@ namespace atividadeObjetoHeroi
 			Left = 0;
 			Top = 100;
 			speed = 20;
-			direcao = "dir";
+			direcao = 1;
 		}
 		
 		public void MovDir(){
 			
 			Left += speed;
 			
-			if (direcao == "esq")
+			if (direcao == -1)
 			{
-				direcao = "dir";
+				direcao = 1;
 				Load("Gargoyle.gif");
 			}
 			
@@ -38,9 +38,9 @@ namespace atividadeObjetoHeroi
 			
 			Left -= speed;
 			
-			if (direcao == "dir")
+			if (direcao == 1)
 			{
-				direcao = "esq";
+				direcao = -1;
 				Load("GargoyleEsq.gif");
 			}
 			

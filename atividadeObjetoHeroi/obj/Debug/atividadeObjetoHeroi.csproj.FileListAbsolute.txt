@@ -22,3 +22,11 @@ D:\Etec\Modulo 2\Desenvolvimento de Sisemas (Saiz)\Saiz\atividadeObjetoHeroi\ati
 D:\Etec\Modulo 2\Desenvolvimento de Sisemas (Saiz)\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.csproj.GenerateResource.Cache
 D:\Etec\Modulo 2\Desenvolvimento de Sisemas (Saiz)\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.exe
 D:\Etec\Modulo 2\Desenvolvimento de Sisemas (Saiz)\Saiz\atividadeObjetoHeroi\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.pdb
+C:\Users\Lucas\Downloads\DS\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\Downloads\DS\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.MainForm.resources
+C:\Users\Lucas\Downloads\DS\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.csproj.GenerateResource.Cache
+C:\Users\Lucas\Downloads\DS\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.exe
+C:\Users\Lucas\Downloads\DS\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.pdb
+C:\Users\Lucas\Downloads\DS\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\bin\Debug\atividadeObjetoHeroi.exe.config
+C:\Users\Lucas\Downloads\DS\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\bin\Debug\atividadeObjetoHeroi.exe
+C:\Users\Lucas\Downloads\DS\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\bin\Debug\atividadeObjetoHeroi.pdb

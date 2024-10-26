@@ -20,6 +20,6 @@ namespace atividadeObjetoHeroi
 			public int ataque = 15;
 			public int defesa = 15;
 			public int speed = 20;
-			public string direcao = "dir";
+			public int direcao = 1;
 	}
 }

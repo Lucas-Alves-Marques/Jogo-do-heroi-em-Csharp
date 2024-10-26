@@ -14,9 +14,6 @@ namespace atividadeObjetoHeroi
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
-		private System.Windows.Forms.ProgressBar progressBar1;
-		private System.Windows.Forms.Timer timer_power;
-		private System.Windows.Forms.Label label1;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -39,39 +36,16 @@ namespace atividadeObjetoHeroi
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			this.progressBar1 = new System.Windows.Forms.ProgressBar();
-			this.timer_power = new System.Windows.Forms.Timer(this.components);
-			this.label1 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
-			// 
-			// progressBar1
-			// 
-			this.progressBar1.Location = new System.Drawing.Point(67, 449);
-			this.progressBar1.Maximum = 6;
-			this.progressBar1.Name = "progressBar1";
-			this.progressBar1.Size = new System.Drawing.Size(209, 23);
-			this.progressBar1.Step = 1;
-			this.progressBar1.TabIndex = 0;
-			this.progressBar1.Value = 6;
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(328, 442);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(60, 29);
-			this.label1.TabIndex = 1;
-			this.label1.Text = "label1";
 			// 
 			// MainForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(986, 509);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.progressBar1);
-			this.MaximumSize = new System.Drawing.Size(1008, 565);
-			this.MinimumSize = new System.Drawing.Size(1008, 565);
+			this.ClientSize = new System.Drawing.Size(661, 342);
+			this.Margin = new System.Windows.Forms.Padding(2);
+			this.MaximumSize = new System.Drawing.Size(677, 381);
+			this.MinimumSize = new System.Drawing.Size(677, 381);
 			this.Name = "MainForm";
 			this.Text = "atividadeObjetoHeroi";
 			this.Load += new System.EventHandler(this.MainFormLoad);

@@ -11,26 +11,34 @@ namespace atividadeObjetoHeroi
 		{
 			InitializeComponent();
 		}
+
+		heroi julio = new heroi();
+		Inimigo inimigo = new Inimigo();
 		
 		public static PictureBox Fundo = new PictureBox();
-		
-		heroi julio = new heroi();
-		
-		tiro geral = new tiro();
-		
-		public static int n_tiros = 6;
-		
+		public static ListBox listaTiros = new ListBox();
+		public static ProgressBar barra = new ProgressBar();
 		
 		void MainFormLoad(object sender, EventArgs e)
 		{
+			//FUNDO
+			
 			Fundo.Parent = this;
 			Fundo.Height = this.Height-120;
 			Fundo.Width = this.Width;
 			Fundo.SizeMode = PictureBoxSizeMode.StretchImage;
 			Fundo.Load("cenario0.gif");
-			timer_power.Enabled = true;
-			label1.Text= n_tiros.ToString();
 			
+			//BARRA DE PROGRESSO
+			
+			barra.Parent = this;
+			barra.Left = 200;
+			barra.Top = this.Height - 90;
+			barra.Width = 200;
+			barra.Maximum = 6;
+			barra.Minimum = 0;
+			barra.Step = 1;
+			barra.Value = 6;
 		}
 		
 		void MainFormKeyDown(object sender, KeyEventArgs e){	
@@ -59,19 +67,22 @@ namespace atividadeObjetoHeroi
 				
 			}
 			
-			if (e.KeyCode == Keys.Space) {
+			if (e.KeyCode == Keys.Space) 
+			{
 				
-				
-				if (progressBar1.Value > 0) {
-				
-					julio.Tiro();
+				if (barra.Value > 0) 
+				{
+					tiro tiro = new tiro();
+					listaTiros.Items.Add(tiro);
+					tiro.Load("fireball.gif");
+					tiro.Top = (int) julio.Top + (julio.Height/2) - tiro.Height;
+					tiro.Left = julio.Left;
+					tiro.personagemAlvo = inimigo;
+					barra.Value -= 1;
 					
-					n_tiros--;
-				
-					progressBar1.Value = n_tiros;
-				
+					          
 				}
-		
+				
 			}
 			
 		}
