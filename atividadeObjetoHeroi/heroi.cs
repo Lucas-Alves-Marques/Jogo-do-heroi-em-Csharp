@@ -82,5 +82,17 @@ namespace atividadeObjetoHeroi
 			fireboll.direcao = direcao;
 			
 		}
+		
+		public void PerdeVidas(){
+			
+			if (hp == 0) {
+				
+				MessageBox.Show("Voce não tem mais vidas","Sem vidas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				
+				hp = 100;
+			}
+			
+			hp -= 20;
+		}
 	}
 }

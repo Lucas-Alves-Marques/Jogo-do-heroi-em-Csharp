@@ -17,15 +17,15 @@ namespace atividadeObjetoHeroi
 			direcao = -1;
 			timerMovimento.Enabled = true;
 			timerMovimento.Interval = 100;
-			timerMovimento.Tick += Movimento;
-			
+			timerMovimento.Tick += Movimento;	
 			
 		}
 		
 		int direcaoVertical = 1;
+		
 		public Timer timerMovimento = new Timer();
 		public Timer timerExplosão = new Timer();
-		
+
 		
 		void Movimento(object sender, EventArgs e)
 		{
@@ -46,6 +46,7 @@ namespace atividadeObjetoHeroi
 		
 			timerExplosão.Stop();
 			this.Dispose();
+			Left = 5000;
 		}
 		
 		public void Destruir()
@@ -55,11 +56,9 @@ namespace atividadeObjetoHeroi
 			timerExplosão.Enabled = true;
 			timerExplosão.Interval = 1500;
 			timerExplosão.Tick += explosão;
-			
-			
-			//Left = 5000;
-			//this.Dispose();
+				
 		}
+		
 		
 	}
 }
