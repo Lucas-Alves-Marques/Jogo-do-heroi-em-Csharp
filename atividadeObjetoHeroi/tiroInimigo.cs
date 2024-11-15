@@ -9,7 +9,7 @@ namespace atividadeObjetoHeroi
 	{
 		public tiroInimigo()
 		{
-			Width = 60;
+			Width = 30;
 			Height = 30;
 			SizeMode = PictureBoxSizeMode.StretchImage;
 			BackColor = Color.Transparent;
@@ -38,6 +38,7 @@ namespace atividadeObjetoHeroi
 				
 				(personagemAlvo as heroi).PerdeVidas();
 				Destruir();
+				
 			}
 			
 		}

@@ -16,6 +16,10 @@ namespace atividadeObjetoHeroi
 			direcao = 1;
 		}
 		
+		public Personagem inimigo;
+		
+		int cenario = 0;
+		
 		public void MovDir(){
 			
 			Left += speed;
@@ -26,9 +30,26 @@ namespace atividadeObjetoHeroi
 				Load("Gargoyle.gif");
 			}
 			
-			if (Left > 570)
+			if (Left > 570 && cenario!= 2)
 			{
 				Left = 0;
+				
+				if (cenario  == 0) {
+					
+					MainForm.Fundo.Load("cenario1.gif");
+					cenario = 1;
+				}
+				
+				if (cenario == 1) {
+					
+					MainForm.Fundo.Load("cenario2.gif");
+					cenario = 2;
+				}
+			}
+			
+			if (Left > 570 && cenario == 2) {
+				
+				Left = 570;
 			}
 			
 			
@@ -44,12 +65,28 @@ namespace atividadeObjetoHeroi
 				Load("GargoyleEsq.gif");
 			}
 			
-			if (Left < 0)
+			if (Left < 0 && cenario != 0)
 			{
-				Left = 570;
+				if (cenario == 2) {
+					
+					MainForm.Fundo.Load("cenario1.gif");
+					Left = 570;
+					cenario = 1;
+				}
+				
+				if (cenario == 1) {
+					
+					MainForm.Fundo.Load("cenario0.gif");
+					Left = 570;
+					cenario = 0;
+				}
+				
 			}
 			
-			
+			if (Left < 0 && cenario == 0){
+				
+				Left = 0;
+			}
 		}
 		
 		public void MovCima(){
@@ -87,9 +124,18 @@ namespace atividadeObjetoHeroi
 			
 			if (hp == 0) {
 				
+				Top = 1000;
+				
+				MainForm.timerTiro.Enabled = false;
+			
+				this.Dispose();
+				
+				inimigo.Dispose();
+				
 				MessageBox.Show("Voce não tem mais vidas","Sem vidas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 				
-				hp = 100;
+				
+				
 			}
 			
 			hp -= 20;

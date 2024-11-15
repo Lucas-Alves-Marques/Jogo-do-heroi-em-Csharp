@@ -16,7 +16,7 @@ namespace atividadeObjetoHeroi
 			Load("dragonEsq2.GIF");
 			direcao = -1;
 			timerMovimento.Enabled = true;
-			timerMovimento.Interval = 100;
+			timerMovimento.Interval = 150;
 			timerMovimento.Tick += Movimento;	
 			
 		}
@@ -57,6 +57,11 @@ namespace atividadeObjetoHeroi
 			timerExplosão.Interval = 1500;
 			timerExplosão.Tick += explosão;
 				
+		}
+		
+		public void FimdeJogo(){
+			
+			this.Dispose();
 		}
 		
 		

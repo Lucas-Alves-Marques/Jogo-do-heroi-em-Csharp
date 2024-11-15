@@ -14,8 +14,8 @@ namespace atividadeObjetoHeroi
 
 		heroi julio = new heroi();
 		Inimigo inimigo = new Inimigo();
-		public Timer timerTiro = new Timer();
 		
+		public static Timer timerTiro = new Timer();
 		public static PictureBox Fundo = new PictureBox();
 		public static ListBox listaTiros = new ListBox();
 		public static ProgressBar barra = new ProgressBar();
@@ -45,16 +45,20 @@ namespace atividadeObjetoHeroi
 			
 			timerTiro.Tick += Tiro;
 			timerTiro.Enabled = true;
+			timerTiro.Interval = 1000;
 			
+			//
+			
+			julio.inimigo = inimigo;
 			
 		}
-		
 		
 		public void Tiro(object sender, EventArgs e){
 			
 			tiroInimigo tiro = new tiroInimigo();
 			tiro.Left = Left;
-			tiro.Top = (int) Top + (Height/2) - tiro.Height;
+			tiro.Top = inimigo.Top + 50;
+			tiro.Left = inimigo.Left -20;
 			tiro.personagemAlvo = julio;
 			tiro.Load("forceball.gif");
 			
