@@ -7,6 +7,8 @@ namespace atividadeObjetoHeroi
 {
 	public class heroi: Personagem
 	{	
+		public static int cenario = 0;
+	
 		public heroi()
 		{
 			Load("Gargoyle.gif");
@@ -18,8 +20,6 @@ namespace atividadeObjetoHeroi
 		
 		public Personagem inimigo;
 		
-		int cenario = 0;
-		
 		public void MovDir(){
 			
 			Left += speed;
@@ -30,28 +30,21 @@ namespace atividadeObjetoHeroi
 				Load("Gargoyle.gif");
 			}
 			
-			if (Left > 570 && cenario!= 2)
-			{
+			if (Left > 570) {
+				
+				if (cenario == 2) {
+					
+					Left = 570;
+				}
+				else {
+					
 				Left = 0;
+				cenario ++;
+				MainForm.Fundo.Load("cenario"+cenario+".gif");
 				
-				if (cenario  == 0) {
-					
-					MainForm.Fundo.Load("cenario1.gif");
-					cenario = 1;
 				}
 				
-				if (cenario == 1) {
-					
-					MainForm.Fundo.Load("cenario2.gif");
-					cenario = 2;
-				}
 			}
-			
-			if (Left > 570 && cenario == 2) {
-				
-				Left = 570;
-			}
-			
 			
 		}
 		
@@ -65,27 +58,20 @@ namespace atividadeObjetoHeroi
 				Load("GargoyleEsq.gif");
 			}
 			
-			if (Left < 0 && cenario != 0)
-			{
-				if (cenario == 2) {
-					
-					MainForm.Fundo.Load("cenario1.gif");
-					Left = 570;
-					cenario = 1;
-				}
+			if (Left < 0) {
 				
-				if (cenario == 1) {
+				if (cenario == 0) {
 					
-					MainForm.Fundo.Load("cenario0.gif");
-					Left = 570;
-					cenario = 0;
+					Left = 0;
 				}
+				else {
+					
+				Left = 570;
+				cenario --;
+				MainForm.Fundo.Load("cenario"+cenario+".gif");
 				
-			}
+				}
 			
-			if (Left < 0 && cenario == 0){
-				
-				Left = 0;
 			}
 		}
 		
@@ -107,17 +93,6 @@ namespace atividadeObjetoHeroi
 			{	
 				Top = 190;
 			}
-		}
-		
-		public void Tiro(){
-			
-			tiro fireboll = new tiro();
-			fireboll.Left = Left;
-			fireboll.Top = Top + 20;
-			fireboll.Parent = MainForm.Fundo;
-			
-			fireboll.direcao = direcao;
-			
 		}
 		
 		public void PerdeVidas(){

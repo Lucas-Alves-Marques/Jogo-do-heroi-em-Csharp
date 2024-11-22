@@ -39,6 +39,7 @@ namespace atividadeObjetoHeroi
 				
 				(personagemAlvo as Inimigo).Destruir();
 				Destruir();
+				MainForm.timerTiro.Enabled = false;
 			}
 			
 			

@@ -15,6 +15,8 @@ namespace atividadeObjetoHeroi
 		heroi julio = new heroi();
 		Inimigo inimigo = new Inimigo();
 		
+		Label cenario = new Label();
+		
 		public static Timer timerTiro = new Timer();
 		public static PictureBox Fundo = new PictureBox();
 		public static ListBox listaTiros = new ListBox();
@@ -43,20 +45,19 @@ namespace atividadeObjetoHeroi
 			
 			//Tiro inimigo
 			
+			julio.inimigo = inimigo;
+				
 			timerTiro.Tick += Tiro;
 			timerTiro.Enabled = true;
 			timerTiro.Interval = 1000;
 			
-			//
-			
-			julio.inimigo = inimigo;
+
 			
 		}
 		
 		public void Tiro(object sender, EventArgs e){
 			
 			tiroInimigo tiro = new tiroInimigo();
-			tiro.Left = Left;
 			tiro.Top = inimigo.Top + 50;
 			tiro.Left = inimigo.Left -20;
 			tiro.personagemAlvo = julio;
