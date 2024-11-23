@@ -16,6 +16,7 @@ namespace atividadeObjetoHeroi
 			Top = 100;
 			speed = 20;
 			direcao = 1;
+			hp = 5;
 		}
 		
 		public Personagem inimigo;
@@ -97,8 +98,35 @@ namespace atividadeObjetoHeroi
 		
 		public void PerdeVidas(){
 			
-			if (hp == 0) {
+			
+			if (hp == 5) {
 				
+				MainForm.Vida5.Image = null;
+				hp--;
+			}
+			
+			else if(hp == 4) {
+				
+				MainForm.Vida4.Image = null;
+				hp--;
+			}
+			
+			else if(hp == 3){
+				
+				MainForm.Vida3.Image = null;
+				hp--;
+			}
+			
+			else if (hp == 2) {
+				
+				MainForm.Vida2.Image = null;
+				hp--;
+			}
+			
+			else if (hp == 1) {
+			
+				MainForm.Vida1.Image = null;
+			
 				Top = 1000;
 				
 				MainForm.timerTiro.Enabled = false;
@@ -108,12 +136,12 @@ namespace atividadeObjetoHeroi
 				inimigo.Dispose();
 				
 				MessageBox.Show("Voce não tem mais vidas","Sem vidas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-				
-				
-				
 			}
 			
-			hp -= 20;
+			
 		}
+		
+		
+		
 	}
 }

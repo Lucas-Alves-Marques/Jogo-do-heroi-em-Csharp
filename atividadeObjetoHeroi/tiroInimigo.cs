@@ -25,7 +25,7 @@ namespace atividadeObjetoHeroi
 		public Personagem personagemAlvo;
 		
 		void Movimento(object sender, EventArgs e)
-		{	
+		{
 			
 			Left -= direcao * speed;
 			
@@ -35,11 +35,14 @@ namespace atividadeObjetoHeroi
 			}
 			
 			else if(personagemAlvo.Bounds.IntersectsWith(this.Bounds)){
+
+					(personagemAlvo as heroi).PerdeVidas();
 				
-				(personagemAlvo as heroi).PerdeVidas();
-				Destruir();
+					Destruir();
 				
-			}
+				}
+				
+
 			
 		}
 		
