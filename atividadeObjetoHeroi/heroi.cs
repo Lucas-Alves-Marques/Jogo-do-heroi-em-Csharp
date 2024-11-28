@@ -99,39 +99,69 @@ namespace atividadeObjetoHeroi
 		public void PerdeVidas(){
 			
 			
-			if (hp == 5) {
+			if (MainForm.escudo5.Image != null) {
 				
-				MainForm.Vida5.Image = null;
+				MainForm.escudo5.Image = null;
+			}
+			
+			else if (MainForm.escudo4.Image != null) {
+				
+				MainForm.escudo4.Image = null;
+			}
+			
+			else if (MainForm.escudo3.Image != null) {
+				
+				MainForm.escudo3.Image = null;
+			}
+			
+			else if (MainForm.escudo2.Image != null) {
+				
+				MainForm.escudo2.Image = null;
+			}
+			
+			else if (MainForm.escudo1.Image != null) {
+				
+				MainForm.escudo1.Image = null;
+			}
+			
+			else if (MainForm.escudo3.Image != null) {
+				
+				MainForm.escudo3.Image = null;
+			}
+			
+			else if (hp == 5) {
+				
+				MainForm.Vida_H_5.Image = null;
 				hp--;
 			}
 			
 			else if(hp == 4) {
 				
-				MainForm.Vida4.Image = null;
+				MainForm.Vida_H_4.Image = null;
 				hp--;
 			}
 			
 			else if(hp == 3){
 				
-				MainForm.Vida3.Image = null;
+				MainForm.Vida_H_3.Image = null;
 				hp--;
 			}
 			
 			else if (hp == 2) {
 				
-				MainForm.Vida2.Image = null;
+				MainForm.Vida_H_2.Image = null;
 				hp--;
 			}
 			
 			else if (hp == 1) {
 			
-				MainForm.Vida1.Image = null;
-			
-				Top = 1000;
+				MainForm.Vida_H_1.Image = null;
 				
 				MainForm.timerTiro.Enabled = false;
-			
-				this.Dispose();
+				
+				Destruir();
+				
+				hp--;
 				
 				inimigo.Dispose();
 				

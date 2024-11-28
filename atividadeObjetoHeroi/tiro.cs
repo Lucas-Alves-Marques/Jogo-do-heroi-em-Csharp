@@ -37,7 +37,7 @@ namespace atividadeObjetoHeroi
 			
 			else if(personagemAlvo.Bounds.IntersectsWith(this.Bounds)){
 				
-				(personagemAlvo as Inimigo).Destruir();
+				(personagemAlvo as Inimigo).PerdeVidasInimigo();
 				Destruir();
 				MainForm.timerTiro.Enabled = false;
 			}

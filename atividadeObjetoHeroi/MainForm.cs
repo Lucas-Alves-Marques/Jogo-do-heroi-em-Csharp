@@ -22,17 +22,32 @@ namespace atividadeObjetoHeroi
 		
 		public static PictureBox Fundo = new PictureBox();
 		
-		public static Vida_Heroi Vida1 = new Vida_Heroi();
-		public static Vida_Heroi Vida2 = new Vida_Heroi();
-		public static Vida_Heroi Vida3 = new Vida_Heroi();
-		public static Vida_Heroi Vida4 = new Vida_Heroi();
-		public static Vida_Heroi Vida5 = new Vida_Heroi();
+		public static Vida Vida_H_1 = new Vida();
+		public static Vida Vida_H_2 = new Vida();
+		public static Vida Vida_H_3 = new Vida();
+		public static Vida Vida_H_4 = new Vida();
+		public static Vida Vida_H_5 = new Vida();
 		
 		public static defesa escudo1 = new defesa();
 		public static defesa escudo2 = new defesa();
 		public static defesa escudo3 = new defesa();
 		public static defesa escudo4 = new defesa();
 		public static defesa escudo5 = new defesa();
+		
+		public static Vida Vida_I1_1 = new Vida();
+		public static Vida Vida_I1_2 = new Vida();
+		public static Vida Vida_I1_3 = new Vida();
+		public static Vida Vida_I1_4 = new Vida();
+		public static Vida Vida_I1_5 = new Vida();
+		public static Vida Vida_I1_6 = new Vida();
+		public static Vida Vida_I1_7 = new Vida();
+		public static Vida Vida_I1_8 = new Vida();
+		public static Vida Vida_I1_9 = new Vida();
+		public static Vida Vida_I1_10 = new Vida();
+		public static Vida Vida_I1_11 = new Vida();
+		public static Vida Vida_I1_12 = new Vida();
+
+		
 		
 		
 		void MainFormLoad(object sender, EventArgs e)
@@ -60,22 +75,67 @@ namespace atividadeObjetoHeroi
 			//Tiro inimigo
 			
 			julio.inimigo = inimigo;
-				
 			timerTiro.Tick += Tiro;
 			timerTiro.Enabled = true;
 			timerTiro.Interval = 1000;
 			
+			// Vida Inimigo
+			
+			Vida_I1_4.Parent = this;
+			Vida_I1_4.Left = 620;
+			Vida_I1_3.Parent = this;
+			Vida_I1_3.Left = 595;
+			Vida_I1_2.Parent = this;
+			Vida_I1_2.Left = 570;
+			Vida_I1_1.Parent = this;
+			Vida_I1_1.Left = 545;
+			
+			Vida_I1_8.Parent = this;
+			Vida_I1_8.Left = 620;
+			Vida_I1_8.Top += 25;
+			Vida_I1_7.Parent = this;
+			Vida_I1_7.Left = 595;
+			Vida_I1_7.Top += 25;
+			Vida_I1_6.Parent = this;
+			Vida_I1_6.Left = 570;
+			Vida_I1_6.Top += 25;
+			Vida_I1_5.Parent = this;
+			Vida_I1_5.Left = 545;
+			Vida_I1_5.Top += 25;
+			
+			Vida_I1_12.Parent = this;
+			Vida_I1_12.Left = 620;
+			Vida_I1_12.Top += 50;
+			Vida_I1_12.Image = null;
+			Vida_I1_11.Parent = this;
+			Vida_I1_11.Left = 595;
+			Vida_I1_11.Top += 50;
+			Vida_I1_11.Image = null;
+			Vida_I1_10.Parent = this;
+			Vida_I1_10.Left = 570;
+			Vida_I1_10.Top += 50;
+			Vida_I1_10.Image = null;
+			Vida_I1_9.Parent = this;
+			Vida_I1_9.Left = 545;
+			Vida_I1_9.Top += 50;
+			Vida_I1_9.Image = null;
+			
+			inimigo.hp = 8;
+			
+			
+			
+			
 			//Vida do Heroi
 			
-			Vida1.Parent = this;
-			Vida2.Parent = this;
-			Vida2.Left = 35;
-			Vida3.Parent = this;
-			Vida3.Left = 60;
-			Vida4.Parent = this;
-			Vida4.Left = 85;
-			Vida5.Parent = this;
-			Vida5.Left = 110;
+			Vida_H_1.Parent = this;
+			Vida_H_2.Parent = this;
+			Vida_H_2.Left = 35;
+			Vida_H_3.Parent = this;
+			Vida_H_3.Left = 60;
+			Vida_H_4.Parent = this;
+			Vida_H_4.Left = 85;
+			Vida_H_5.Parent = this;
+			Vida_H_5.Left = 110;
 			
 			//Defesa do Heroi
 			
@@ -84,10 +144,12 @@ namespace atividadeObjetoHeroi
 			escudo2.Left = 35;
 			escudo3.Parent = this;
 			escudo3.Left = 57;
-			//escudo4.Parent = this;
-			//escudo4.Left = 79;
-			//escudo5.Parent = this;
-			//escudo5.Left = 101;
+			escudo4.Parent = this;
+			escudo4.Left = 79;
+			escudo4.Image = null;
+			escudo5.Parent = this;
+			escudo5.Left = 101;
+			escudo5.Image = null;
 			
 						
 		}

@@ -6,9 +6,9 @@ using System.Windows.Forms;
 namespace atividadeObjetoHeroi
 {
 
-	public class Vida_Heroi : PictureBox
+	public class Vida : PictureBox
 	{
-		public Vida_Heroi()
+		public Vida()
 		{
 			Left = 10;
 			Top = 260;

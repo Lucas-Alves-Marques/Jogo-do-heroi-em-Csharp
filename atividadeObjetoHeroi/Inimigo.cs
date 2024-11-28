@@ -17,22 +17,19 @@ namespace atividadeObjetoHeroi
 			direcao = -1;
 			timerMovimento.Enabled = true;
 			timerMovimento.Interval = 150;
-			timerMovimento.Tick += Movimento;	
+			timerMovimento.Tick += Movimento;			
 			
 		}
 		
 		int direcaoVertical = 1;
 		
 		public Timer timerMovimento = new Timer();
-		public Timer timerExplosão = new Timer();
-
 		
 		void Movimento(object sender, EventArgs e)
 		{
 			Top += speed * direcaoVertical;
 			
-			if(Top >= 180)
-			{
+			if(Top >= 180) {
 				direcaoVertical = -1;
 			}
 			
@@ -42,22 +39,23 @@ namespace atividadeObjetoHeroi
 			}
 		}
 		
-		void explosão(object sender, EventArgs e){
+		public void PerdeVidasInimigo(){
 		
-			timerExplosão.Stop();
-			this.Dispose();
-			Left = 5000;
-		}
-		
-		public void Destruir()
-		{
-			timerMovimento.Enabled = false;
-			Load("explosão2.gif");
-			timerExplosão.Enabled = true;
-			timerExplosão.Interval = 1500;
-			timerExplosão.Tick += explosão;
+		 if (MainForm.Vida_I1_12.Image != null) {
+		 	
+				MainForm.Vida_I1_12.Image = null;
+				hp--;
 				
+		 }
+			
+		 else if (MainForm.Vida_I1_8.Image != null) {
+		 	
+				MainForm.Vida_I1_8.Image = null;
+				hp--;	
+		 }
+		
 		}
+
 		
 		public void FimdeJogo(){
 			

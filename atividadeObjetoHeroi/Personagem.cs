@@ -21,5 +21,23 @@ namespace atividadeObjetoHeroi
 			public int defesa = 15;
 			public int speed = 20;
 			public int direcao = 1;
+			
+			public Timer timerExplosão = new Timer();
+			
+		void explosão(object sender, EventArgs e){
+		
+			timerExplosão.Stop();
+			Left = 5000;
+			this.Dispose();
+		}
+		
+		public void Destruir()
+		{
+			Load("explosão2.gif");
+			timerExplosão.Enabled = true;
+			timerExplosão.Interval = 1500;
+			timerExplosão.Tick += explosão;
+				
+		}
 	}
 }

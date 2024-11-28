@@ -62,7 +62,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tiro.cs" />
     <Compile Include="tiroInimigo.cs" />
-    <Compile Include="Vida_Heroi.cs" />
+    <Compile Include="Vidas.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
