@@ -19,7 +19,7 @@ namespace atividadeObjetoHeroi
 			hp = 5;
 		}
 		
-		public Personagem inimigo;
+		public Inimigo inimigo;
 		
 		public void MovDir(){
 			
@@ -31,22 +31,19 @@ namespace atividadeObjetoHeroi
 				Load("Gargoyle.gif");
 			}
 			
-			if (Left > 570) {
-				
-				if (cenario == 2) {
-					
-					Left = 570;
-				}
-				else {
-					
+			if (Left > MainForm.Fundo.Width && inimigo.Image == null) {
+			
 				Left = 0;
 				cenario ++;
 				MainForm.Fundo.Load("cenario"+cenario+".gif");
 				
-				}
-				
 			}
 			
+			if (Left > inimigo.Left - 100 && inimigo.Image !=null) {
+				
+				Left = 450;
+			}
+		
 		}
 		
 		public void MovEsq(){
@@ -65,13 +62,15 @@ namespace atividadeObjetoHeroi
 					
 					Left = 0;
 				}
-				else {
-					
+				
+				else if (inimigo.Image == null) {
+				
 				Left = 570;
 				cenario --;
 				MainForm.Fundo.Load("cenario"+cenario+".gif");
 				
-				}
+				} 
+					
 			
 			}
 		}

@@ -17,11 +17,14 @@ namespace atividadeObjetoHeroi
 			direcao = -1;
 			timerMovimento.Enabled = true;
 			timerMovimento.Interval = 150;
-			timerMovimento.Tick += Movimento;			
+			timerMovimento.Tick += Movimento;
+			hp = 8;
 			
 		}
 		
 		int direcaoVertical = 1;
+		
+		public tiroInimigo rajada;
 		
 		public Timer timerMovimento = new Timer();
 		
@@ -41,22 +44,86 @@ namespace atividadeObjetoHeroi
 		
 		public void PerdeVidasInimigo(){
 		
-		 if (MainForm.Vida_I1_12.Image != null) {
-		 	
+			if (hp == 12) {
+				
 				MainForm.Vida_I1_12.Image = null;
 				hp--;
-				
-		 }
+			}
 			
-		 else if (MainForm.Vida_I1_8.Image != null) {
-		 	
+			else if (hp == 11) {
+				
+				MainForm.Vida_I1_11.Image = null;
+				hp--;
+			}
+			
+			else if (hp == 10) {
+				
+				MainForm.Vida_I1_10.Image = null;
+				hp--;
+			}
+			
+			else if (hp == 9) {
+				
+				MainForm.Vida_I1_9.Image = null;
+				hp--;
+			}
+			
+			else if (hp == 8) {
+				
 				MainForm.Vida_I1_8.Image = null;
-				hp--;	
-		 }
-		
+				hp--;
+			}
+			
+			else if (hp == 7) {
+				
+				MainForm.Vida_I1_7.Image = null;
+				hp--;
+			}
+			
+			else if (hp == 6) {
+				
+				MainForm.Vida_I1_6.Image = null;
+				hp--;
+			}
+			
+			else if (hp == 5) {
+				
+				MainForm.Vida_I1_5.Image = null;
+				hp--;
+			}
+			
+			else if (hp == 4) {
+				
+				MainForm.Vida_I1_4.Image = null;
+				hp--;
+			}
+			
+			else if (hp == 3) {
+				
+				MainForm.Vida_I1_3.Image = null;
+				hp--;
+			}
+			
+			else if (hp == 2) {
+				
+				MainForm.Vida_I1_2.Image = null;
+				hp--;
+			}
+			
+			else if (hp == 1) {
+				
+				MainForm.Vida_I1_1.Image = null;
+				
+				MainForm.timerTiro.Enabled = false;
+				
+				Destruir();
+				
+				timerMovimento.Enabled = false;
+
+			}
+			
 		}
 
-		
 		public void FimdeJogo(){
 			
 			this.Dispose();

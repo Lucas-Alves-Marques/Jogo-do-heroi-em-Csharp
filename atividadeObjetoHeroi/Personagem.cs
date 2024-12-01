@@ -28,7 +28,7 @@ namespace atividadeObjetoHeroi
 		
 			timerExplosão.Stop();
 			Left = 5000;
-			this.Dispose();
+			Image = null;
 		}
 		
 		public void Destruir()
