@@ -13,7 +13,7 @@ namespace atividadeObjetoHeroi
 			Width = 120;
 			Top = 0;
 			Left = 550;
-			Load("dragonEsq2.GIF");
+			Load("Boss1.GIF");
 			direcao = -1;
 			timerMovimento.Enabled = true;
 			timerMovimento.Interval = 150;

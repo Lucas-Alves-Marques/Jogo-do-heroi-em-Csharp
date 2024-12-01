@@ -31,7 +31,7 @@ namespace atividadeObjetoHeroi
 				Load("Gargoyle.gif");
 			}
 			
-			if (Left > MainForm.Fundo.Width && inimigo.Image == null) {
+			if (Left > MainForm.Fundo.Width-20 && inimigo.Image == null) {
 			
 				Left = 0;
 				cenario ++;

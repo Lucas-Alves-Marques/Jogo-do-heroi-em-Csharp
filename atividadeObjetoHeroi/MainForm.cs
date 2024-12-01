@@ -160,7 +160,7 @@ namespace atividadeObjetoHeroi
 			tiro.Top = inimigo.Top + 50;
 			tiro.Left = inimigo.Left -20;
 			tiro.personagemAlvo = julio;
-			tiro.Load("forceball.gif");
+			tiro.Load("fireball2.gif");
 			
 		}
 		
