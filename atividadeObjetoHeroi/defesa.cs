@@ -6,9 +6,7 @@ using System.Windows.Forms;
 
 namespace atividadeObjetoHeroi
 {
-	/// <summary>
-	/// Description of defesa.
-	/// </summary>
+
 	public class defesa : PictureBox
 	{
 		public defesa()

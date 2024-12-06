@@ -37,6 +37,8 @@ namespace atividadeObjetoHeroi
 			}
 			
 			else if(personagemAlvo.Bounds.IntersectsWith(this.Bounds)){
+				
+					MainForm.danoSofrido += 1;
 
 					(personagemAlvo as heroi).PerdeVidas();
 				
@@ -49,11 +51,12 @@ namespace atividadeObjetoHeroi
 				Load("forceball.gif");
 				speed = 40;
 				MainForm.timerTiro.Interval = 2000;
+				
 			}
 			
 			if (heroi.cenario == 2) {
 				
-				Load("vortex.gif");
+				Load("Caveira.gif");
 				speed = 60;
 				MainForm.timerTiro.Interval = 1400;
 			}

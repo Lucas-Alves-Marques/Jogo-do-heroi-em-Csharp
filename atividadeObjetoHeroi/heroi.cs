@@ -21,6 +21,7 @@ namespace atividadeObjetoHeroi
 		
 		public Inimigo inimigo;
 		
+		
 		public void MovDir(){
 			
 			Left += speed;
@@ -35,12 +36,91 @@ namespace atividadeObjetoHeroi
 			
 				Left = 0;
 				cenario ++;
-				inimigo.Load("Boss2.gif");
-				inimigo.Left = 500;
-				inimigo.timerMovimento.Enabled = true;
-				MainForm.timerTiro.Enabled = true;
 				MainForm.Fundo.Load("cenario"+cenario+".gif");
 				
+				if (cenario == 1) {
+				
+					inimigo.Load("Boss2.gif");
+					inimigo.Left = 570;
+					inimigo.timerMovimento.Enabled = true;
+					inimigo.speed += 10;
+					inimigo.hp = 10;
+					MainForm.timerTiro.Enabled = true;
+					MainForm.timerTiro.Interval = 1600;
+					
+					MainForm.Vida_I1_1.Load("vida.png");
+					MainForm.Vida_I1_2.Load("vida.png");
+					MainForm.Vida_I1_3.Load("vida.png");
+					MainForm.Vida_I1_4.Load("vida.png");
+					MainForm.Vida_I1_5.Load("vida.png");
+					MainForm.Vida_I1_6.Load("vida.png");
+					MainForm.Vida_I1_7.Load("vida.png");
+					MainForm.Vida_I1_8.Load("vida.png");
+					MainForm.Vida_I1_9.Load("vida.png");
+					MainForm.Vida_I1_10.Load("vida.png");
+					
+					
+					MainForm.Vida_H_1.Load("vida.png");
+					MainForm.Vida_H_2.Load("vida.png");
+					MainForm.Vida_H_3.Load("vida.png");
+					MainForm.Vida_H_4.Load("vida.png");
+					MainForm.Vida_H_5.Load("vida.png");
+					
+					MainForm.escudo1.Load("defesa.png");
+					MainForm.escudo2.Load("defesa.png");
+					MainForm.escudo3.Load("defesa.png");
+					MainForm.escudo4.Load("defesa.png");
+					
+					hp = 5;
+					
+				}
+				
+				if (cenario == 2) {
+					
+					inimigo.Load("Boss3.gif");
+					inimigo.Left = 570;
+					inimigo.timerMovimento.Enabled = true;
+					MainForm.timerTiro.Enabled = true;
+					inimigo.hp = 12;
+					inimigo.Width = 85;
+					inimigo.Height = 65;
+					MainForm.timerTiro.Interval = 1600;
+					
+					
+					
+					MainForm.Vida_I1_1.Load("vida.png");
+					MainForm.Vida_I1_2.Load("vida.png");
+					MainForm.Vida_I1_3.Load("vida.png");
+					MainForm.Vida_I1_4.Load("vida.png");
+					MainForm.Vida_I1_5.Load("vida.png");
+					MainForm.Vida_I1_6.Load("vida.png");
+					MainForm.Vida_I1_7.Load("vida.png");
+					MainForm.Vida_I1_8.Load("vida.png");
+					MainForm.Vida_I1_9.Load("vida.png");
+					MainForm.Vida_I1_10.Load("vida.png");
+					MainForm.Vida_I1_11.Load("vida.png");
+					MainForm.Vida_I1_12.Load("vida.png");
+					
+					MainForm.Vida_H_1.Load("vida.png");
+					MainForm.Vida_H_2.Load("vida.png");
+					MainForm.Vida_H_3.Load("vida.png");
+					MainForm.Vida_H_4.Load("vida.png");
+					MainForm.Vida_H_5.Load("vida.png");
+					
+					MainForm.escudo1.Load("defesa.png");
+					MainForm.escudo2.Load("defesa.png");
+					MainForm.escudo3.Load("defesa.png");
+					MainForm.escudo4.Load("defesa.png");
+					MainForm.escudo5.Load("defesa.png");
+					
+					hp = 5;
+					
+				}
+				
+				if (cenario == 0) {
+					
+					Left =  MainForm.Fundo.Width;
+				}
 			}
 			
 			if (Left > inimigo.Left - 100 && inimigo.Image !=null) {
@@ -48,10 +128,6 @@ namespace atividadeObjetoHeroi
 				Left = 450;
 			}
 			
-			if (cenario == 1) {
-				
-				
-			}
 		}
 		
 		public void MovEsq(){
@@ -66,19 +142,8 @@ namespace atividadeObjetoHeroi
 			
 			if (Left < 0) {
 				
-				if (cenario == 0) {
-					
-					Left = 0;
-				}
 				
-				else if (inimigo.Image == null) {
-				
-				Left = 570;
-				cenario --;
-				MainForm.Fundo.Load("cenario"+cenario+".gif");
-				
-				} 
-					
+				Left = 0;
 			
 			}
 		}

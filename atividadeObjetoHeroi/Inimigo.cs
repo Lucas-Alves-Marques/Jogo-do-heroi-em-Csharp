@@ -25,6 +25,14 @@ namespace atividadeObjetoHeroi
 		
 		int direcaoVertical = 1;
 		
+		public Label Vencedor = new Label();
+		
+		public Label danoTotal = new Label();
+		
+		public Button reniciar = new Button();
+		
+		public static int danoSofrido = 0;
+		
 		public tiroInimigo rajada;
 		
 		public Timer timerMovimento = new Timer();
@@ -38,10 +46,11 @@ namespace atividadeObjetoHeroi
 				direcaoVertical = -1;
 			}
 			
-			if (Top <= -40) 
+			if (Top <= 0) 
 			{
 				direcaoVertical = 1;
 			}
+			
 		}
 		
 		public void PerdeVidasInimigo(){
@@ -118,6 +127,12 @@ namespace atividadeObjetoHeroi
 				
 				MainForm.timerTiro.Enabled = false;
 				
+
+				if (heroi.cenario == 2) {
+					
+					JogoVencido();
+				}
+
 				Destruir();
 				
 				timerMovimento.Enabled = false;
@@ -131,6 +146,35 @@ namespace atividadeObjetoHeroi
 			this.Dispose();
 		}
 		
+		public void JogoVencido(){
+			
+			Vencedor.Parent = MainForm.Fundo;
+			Vencedor.Text = "Parabens!! Voce venceu !!";
+			Vencedor.Left = 280;
+			Vencedor.Top = 100;
+			Vencedor.Width = 135;
+			Vencedor.BackColor = Color.White;
+			
+			danoTotal.Parent = MainForm.Fundo;
+			danoTotal.Text = "Total de Dano Recebido foi " + danoSofrido + " pontos de HP";
+			danoTotal.Left = 240;
+			danoTotal.Top = 122;
+			danoTotal.Width = 220;
+			danoTotal.BackColor = Color.White;
+			
+			reniciar.Parent = MainForm.Fundo;
+			reniciar.Text = "Reiniciar";
+			reniciar.Width = 100;
+			reniciar.Left = 300;
+			reniciar.Top = 150;
+			reniciar.BackColor = Color.White;
+			reniciar.Click += reiniciarJogo;
+		}
 		
+		
+		public void reiniciarJogo(object sender, EventArgs e)
+		{
+			Application.Restart();
+		}
 	}
 }

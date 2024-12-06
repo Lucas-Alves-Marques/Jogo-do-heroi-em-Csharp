@@ -15,6 +15,13 @@ namespace atividadeObjetoHeroi
 		public heroi julio = new heroi();
 		public Inimigo inimigo1 = new Inimigo();
 		
+		public Label Vencedor = new Label();
+		
+		public Label danoTotal = new Label();
+		
+		public Button reniciar = new Button();
+		
+		public static int danoSofrido = 0;
 
 		public static Timer timerTiro = new Timer();
 		public static ListBox listaTiros = new ListBox();
@@ -76,7 +83,7 @@ namespace atividadeObjetoHeroi
 			
 			julio.inimigo = inimigo1;
 			timerTiro.Tick += Tiro;
-			timerTiro.Enabled = true;
+			//timerTiro.Enabled = true;
 			timerTiro.Interval = 2600;
 			
 			// Vida Inimigo
@@ -216,10 +223,13 @@ namespace atividadeObjetoHeroi
 		
 		
 		
-		public static void TrocaInimigo(object sender, KeyEventArgs e){
-			
-			
+		
+		void reiniciarJogo(object sender, EventArgs e)
+		{
+			Application.Restart();
 		}
+		
+	
 
 	}
 }
