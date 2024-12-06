@@ -16,6 +16,7 @@ namespace atividadeObjetoHeroi
 			Parent = MainForm.Fundo;
 			timerMovi.Enabled = true;
 			timerMovi.Tick += Movimento;
+			Load("forceball.gif");
 		}
 		
 		Timer timerMovi = new Timer();
@@ -28,6 +29,7 @@ namespace atividadeObjetoHeroi
 		{
 			
 			Left -= direcao * speed;
+			
 			
 			if (Left < 0) {
 				
@@ -42,7 +44,19 @@ namespace atividadeObjetoHeroi
 				
 				}
 				
-
+			if (heroi.cenario == 1) {
+				
+				Load("forceball.gif");
+				speed = 40;
+				MainForm.timerTiro.Interval = 2000;
+			}
+			
+			if (heroi.cenario == 2) {
+				
+				Load("vortex.gif");
+				speed = 60;
+				MainForm.timerTiro.Interval = 1400;
+			}
 			
 		}
 		

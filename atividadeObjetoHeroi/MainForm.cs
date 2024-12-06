@@ -13,7 +13,7 @@ namespace atividadeObjetoHeroi
 		}
 
 		public heroi julio = new heroi();
-		public Inimigo inimigo = new Inimigo();
+		public Inimigo inimigo1 = new Inimigo();
 		
 
 		public static Timer timerTiro = new Timer();
@@ -74,10 +74,10 @@ namespace atividadeObjetoHeroi
 			
 			//Tiro inimigo
 			
-			julio.inimigo = inimigo;
+			julio.inimigo = inimigo1;
 			timerTiro.Tick += Tiro;
 			timerTiro.Enabled = true;
-			timerTiro.Interval = 1000;
+			timerTiro.Interval = 2600;
 			
 			// Vida Inimigo
 			
@@ -120,7 +120,7 @@ namespace atividadeObjetoHeroi
 			Vida_I1_9.Top += 50;
 			Vida_I1_9.Image = null;
 			
-			inimigo.hp = 8;
+			inimigo1.hp = 8;
 			
 			
 			
@@ -151,16 +151,19 @@ namespace atividadeObjetoHeroi
 			escudo5.Left = 101;
 			escudo5.Image = null;
 			
+			
+			
 						
 		}
 		
 		public void Tiro(object sender, EventArgs e){
 			
 			tiroInimigo tiro = new tiroInimigo();
-			tiro.Top = inimigo.Top + 50;
-			tiro.Left = inimigo.Left -20;
+		
+			tiro.Top = inimigo1.Top + 50;
+			tiro.Left = inimigo1.Left -20;
 			tiro.personagemAlvo = julio;
-			tiro.Load("fireball2.gif");
+		
 			
 		}
 		
@@ -199,7 +202,7 @@ namespace atividadeObjetoHeroi
 					tiro.Load("fireball.gif");
 					tiro.Top = (int) julio.Top + (julio.Height/2) - tiro.Height;
 					tiro.Left = julio.Left;
-					tiro.personagemAlvo = inimigo;
+					tiro.personagemAlvo = inimigo1;
 					barra.Value -= 1;
 					julio.direcao = 1;
 					julio.Load("Gargoyle.gif");
@@ -208,6 +211,13 @@ namespace atividadeObjetoHeroi
 				}
 				
 			}
+			
+		}
+		
+		
+		
+		public static void TrocaInimigo(object sender, KeyEventArgs e){
+			
 			
 		}
 

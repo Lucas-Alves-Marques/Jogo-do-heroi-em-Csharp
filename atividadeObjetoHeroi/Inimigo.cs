@@ -20,6 +20,7 @@ namespace atividadeObjetoHeroi
 			timerMovimento.Tick += Movimento;
 			hp = 8;
 			
+			
 		}
 		
 		int direcaoVertical = 1;
@@ -31,6 +32,7 @@ namespace atividadeObjetoHeroi
 		void Movimento(object sender, EventArgs e)
 		{
 			Top += speed * direcaoVertical;
+		
 			
 			if(Top >= 180) {
 				direcaoVertical = -1;

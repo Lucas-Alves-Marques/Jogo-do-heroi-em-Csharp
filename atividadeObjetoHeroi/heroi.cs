@@ -35,6 +35,10 @@ namespace atividadeObjetoHeroi
 			
 				Left = 0;
 				cenario ++;
+				inimigo.Load("Boss2.gif");
+				inimigo.Left = 500;
+				inimigo.timerMovimento.Enabled = true;
+				MainForm.timerTiro.Enabled = true;
 				MainForm.Fundo.Load("cenario"+cenario+".gif");
 				
 			}
@@ -43,7 +47,11 @@ namespace atividadeObjetoHeroi
 				
 				Left = 450;
 			}
-		
+			
+			if (cenario == 1) {
+				
+				
+			}
 		}
 		
 		public void MovEsq(){
