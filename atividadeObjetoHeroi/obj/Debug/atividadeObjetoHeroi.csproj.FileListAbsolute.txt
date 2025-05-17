@@ -38,3 +38,11 @@ C:\Users\aluno\Downloads\Lucas\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\obj\
 C:\Users\aluno\Downloads\Lucas\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.csproj.GenerateResource.Cache
 C:\Users\aluno\Downloads\Lucas\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.exe
 C:\Users\aluno\Downloads\Lucas\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.pdb
+C:\Users\Lucas\Downloads\Jogo do Heroi\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\bin\Debug\atividadeObjetoHeroi.exe.config
+C:\Users\Lucas\Downloads\Jogo do Heroi\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\bin\Debug\atividadeObjetoHeroi.exe
+C:\Users\Lucas\Downloads\Jogo do Heroi\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\bin\Debug\atividadeObjetoHeroi.pdb
+C:\Users\Lucas\Downloads\Jogo do Heroi\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\Downloads\Jogo do Heroi\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.MainForm.resources
+C:\Users\Lucas\Downloads\Jogo do Heroi\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.csproj.GenerateResource.Cache
+C:\Users\Lucas\Downloads\Jogo do Heroi\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.exe
+C:\Users\Lucas\Downloads\Jogo do Heroi\Jogo-do-heroi-em-Csharp\atividadeObjetoHeroi\obj\Debug\atividadeObjetoHeroi.pdb

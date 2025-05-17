@@ -37,8 +37,6 @@ namespace atividadeObjetoHeroi
 			}
 			
 			else if(personagemAlvo.Bounds.IntersectsWith(this.Bounds)){
-				
-					MainForm.danoSofrido += 1;
 
 					(personagemAlvo as heroi).PerdeVidas();
 				

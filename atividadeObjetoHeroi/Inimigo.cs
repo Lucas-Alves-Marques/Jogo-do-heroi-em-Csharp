@@ -31,9 +31,9 @@ namespace atividadeObjetoHeroi
 		
 		public Button reniciar = new Button();
 		
-		public static int danoSofrido = 0;
-		
 		public tiroInimigo rajada;
+		
+		public heroi julio;
 		
 		public Timer timerMovimento = new Timer();
 		
@@ -126,6 +126,7 @@ namespace atividadeObjetoHeroi
 				MainForm.Vida_I1_1.Image = null;
 				
 				MainForm.timerTiro.Enabled = false;
+
 				
 
 				if (heroi.cenario == 2) {
@@ -152,15 +153,18 @@ namespace atividadeObjetoHeroi
 			Vencedor.Text = "Parabens!! Voce venceu !!";
 			Vencedor.Left = 280;
 			Vencedor.Top = 100;
-			Vencedor.Width = 135;
+			Vencedor.Width = 150;
 			Vencedor.BackColor = Color.White;
+			Vencedor.ForeColor = Color.White;
+			Vencedor.Image = Image.FromFile("Fundo_Parte_De_baixo2.png");
 			
 			danoTotal.Parent = MainForm.Fundo;
-			danoTotal.Text = "Total de Dano Recebido foi " + danoSofrido + " pontos de HP";
-			danoTotal.Left = 240;
+			danoTotal.Text = "Total de Dano Direto Recebido foi de " + MainForm.danoSofrido + " pontos de HP";
+			danoTotal.Left = 210;
 			danoTotal.Top = 122;
-			danoTotal.Width = 220;
-			danoTotal.BackColor = Color.White;
+			danoTotal.Width = 270;
+			danoTotal.ForeColor = Color.White;
+			danoTotal.Image = Image.FromFile("Fundo_Parte_De_baixo2.png");
 			
 			reniciar.Parent = MainForm.Fundo;
 			reniciar.Text = "Reiniciar";

@@ -74,16 +74,16 @@ namespace atividadeObjetoHeroi
 			barra.Left = 10;
 			barra.Top = this.Height - 70;
 			barra.Width = 200;
-			barra.Maximum = 6;
+			barra.Maximum = 4;
 			barra.Minimum = 0;
 			barra.Step = 1;
-			barra.Value = 6;
+			barra.Value = 4;
 			
 			//Tiro inimigo
 			
 			julio.inimigo = inimigo1;
 			timerTiro.Tick += Tiro;
-			//timerTiro.Enabled = true;
+			timerTiro.Enabled = true;
 			timerTiro.Interval = 2600;
 			
 			// Vida Inimigo
@@ -212,7 +212,7 @@ namespace atividadeObjetoHeroi
 					tiro.personagemAlvo = inimigo1;
 					barra.Value -= 1;
 					julio.direcao = 1;
-					julio.Load("Gargoyle.gif");
+					julio.Load("Hero.gif");
 					
 					          
 				}
